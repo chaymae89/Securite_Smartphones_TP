@@ -11,8 +11,6 @@ local.properties
 *.aab
 
 # Doublons / anciens dossiers à ne pas envoyer
-/tp_avancé_seance3/
-/TP_Recap_Seance3/
 
 # Système
 .DS_Store

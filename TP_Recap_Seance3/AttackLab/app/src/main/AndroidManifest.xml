@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lab.attacklab">
+
+    <!-- Permission 'normal' de SecureNotesLab : auto-accordée, suffit pour lire le provider -->
+    <uses-permission android:name="com.lab.securenotes.permission.READ_NOTES" />
+
+    <!-- Android 11+ : pouvoir interroger/lire l'autre application -->
+    <queries>
+        <package android:name="com.lab.securenotes" />
+    </queries>
+
+    <application
+        android:allowBackup="false"
+        android:label="AttackLab"
+        android:theme="@style/Theme.AttackLab">
+
+        <activity android:name=".MainActivity" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+</manifest>
