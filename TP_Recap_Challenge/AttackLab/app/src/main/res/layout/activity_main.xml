@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="AttackLab — Challenge SecureNotesLab"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <Button android:id="@+id/btnC1" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="16dp"
+        android:text="C1 : path traversal — lire notes.db" />
+
+    <Button android:id="@+id/btnC2" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:text="C2/C3 : lire TOUTES les notes (provider)" />
+
+    <Button android:id="@+id/btnC4" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:text="C4 : ouvrir le profil admin (token exposé)" />
+
+    <Button android:id="@+id/btnC5" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:text="C5 : lire les logs (clé API)" />
+
+    <Button android:id="@+id/btnC6" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="10dp"
+        android:text="C6 : extraire les secrets de l'APK" />
+
+    <TextView android:id="@+id/txtResult" android:layout_width="match_parent"
+        android:layout_height="wrap_content" android:layout_marginTop="20dp"
+        android:textSize="14sp" />
+
+</LinearLayout>
+</ScrollView>
